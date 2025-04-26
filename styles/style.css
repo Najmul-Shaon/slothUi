@@ -1,3 +1,15 @@
-body {
-  background-color: red;
+/* individual classes start  */
+.spoonser-container {
+  gap: 1.25rem;
+  margin-top: 3.125rem;
 }
+
+.sponsor-row {
+  gap: 1.25rem;
+}
+
+.sponsor-row img {
+  height: 1rem;
+}
+
+/* individual classes end  */
