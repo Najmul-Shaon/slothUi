@@ -46,6 +46,9 @@
 .max-width {
   max-width: 1216px;
 }
+.max-width-800 {
+  max-width: 800px;
+}
 
 /* display property start  */
 
@@ -184,9 +187,16 @@
   border-right: 1px solid #cbd5e1;
 }
 
-.fa-solid,
 .fa-location-dot {
   color: #4f46e5;
+}
+
+.fa-circle-question {
+  margin-right: 0.5rem;
+}
+
+.fa-chevron-down {
+  color: #94a3b8;
 }
 /* shared styles  end*/
 
@@ -313,6 +323,34 @@
 
 .address-card p {
   line-height: 160%;
+}
+
+.faq-card {
+  border-bottom: 1px solid #cbd5e1;
+  padding: 1rem;
+}
+
+.faq-question {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question .fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  margin-top: 1rem;
 }
 /* individual classes end  */
 
