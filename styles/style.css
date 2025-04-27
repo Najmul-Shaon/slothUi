@@ -183,6 +183,11 @@
 .border-end {
   border-right: 1px solid #cbd5e1;
 }
+
+.fa-solid,
+.fa-location-dot {
+  color: #4f46e5;
+}
 /* shared styles  end*/
 
 /* individual classes start  */
@@ -289,6 +294,26 @@
   width: 48px;
   height: 48px;
 }
+
+.address-container {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.address-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.address-card h3 {
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.address-card p {
+  line-height: 160%;
+}
 /* individual classes end  */
 
 /* media query start  */
@@ -333,6 +358,10 @@
     width: 40px;
     height: 40px;
   }
+
+  .address-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 /* for medium device  */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -358,6 +387,9 @@
   }
   .outer-reviews-container {
     flex-direction: column;
+  }
+  .address-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* media query end*/
