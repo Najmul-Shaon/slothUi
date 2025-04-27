@@ -155,9 +155,6 @@
 .text-none {
   text-decoration: none;
 }
-.list-none {
-  list-style: none;
-}
 
 .banner-title h1 {
   margin: 1.5rem 0;
@@ -262,11 +259,15 @@
   justify-content: space-evenly;
   gap: 2rem;
 }
-.menu-list li {
+.menu-list a {
   font-weight: 700;
   font-size: 1rem;
   color: #475569;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.menu-list li {
   list-style: none;
 }
 
@@ -457,6 +458,15 @@
   display: flex;
   gap: 1rem;
 }
+.app-button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.testimonial-btn {
+  margin-top: 2rem;
+  display: none;
+}
 
 .btn {
   padding: 0.75rem 1.5rem;
@@ -464,6 +474,7 @@
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
+  text-align: center;
 }
 
 .learn-more {
@@ -476,9 +487,21 @@
   color: white;
 }
 
+.first-image {
+  position: relative;
+  top: 4rem; /* Move first image down */
+}
+
+.second-image {
+  position: relative;
+  bottom: 4rem; /* Move second image up */
+}
+
 .app-image {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  overflow: hidden;
 }
 
 .app-img-1 {
@@ -545,6 +568,17 @@
   .button-group,
   .menu-list {
     display: none;
+  }
+
+  .app-button-group {
+    flex-direction: column;
+  }
+
+  .testimonial-btn {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 
   .menu-icon {
@@ -625,6 +659,31 @@
   .copyright-container p {
     order: 1;
   }
+
+  .app-container .max-width {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .app-context h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #1e293b;
+    padding-top: 1rem;
+  }
+
+  .app-image {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .first-image {
+    position: relative;
+    top: 4rem; /* Move first image down */
+  }
+
+  .second-image {
+    position: relative;
+    bottom: 0; /* Move second image up */
+  }
 }
 /* for medium device  */
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -632,10 +691,14 @@
     padding-left: 4px;
     padding-right: 4px;
   }
-  .button-group,
+  navbar-container .button-group,
   .menu-list {
     display: none;
   }
+
+  /* .testimonial-btn {
+    display: block;
+  } */
 
   .menu-icon {
     display: block;
@@ -667,31 +730,3 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* @media (max-width: 1024px) {
-  .menu-list {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: white;
-    flex-direction: column;
-    width: 200px;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-  }
-
-  .menu-list.show {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .button-group {
-    display: none;
-  } */
-/* } */
-/* media query end*/
