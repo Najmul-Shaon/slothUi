@@ -1,3 +1,83 @@
+/* import "Plus Jakarta Sans" font from google font */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* set font and reset default browser margin & padding  */
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* shared styles  start*/
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.max-width {
+  max-width: 1216px;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.btn-bg {
+  background-color: rgb(230, 83, 60);
+}
+.font-white {
+  color: #ffffff;
+}
+.text-info {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.mt-96 {
+  margin-top: 6.125rem;
+}
+.mt-14 {
+  margin-top: 0.875rem;
+}
+.text-center {
+  text-align: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.font-18 {
+  font-size: 1.125rem;
+}
+.font-600 {
+  font-weight: 600;
+}
+.text-none {
+  text-decoration: none;
+}
+.list-none {
+  list-style: none;
+}
+/* shared styles  end*/
+
+
 /* individual classes start  */
 .spoonser-container {
   gap: 1.25rem;
