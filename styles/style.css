@@ -294,11 +294,17 @@
 }
 
 .sponsor-row {
-  gap: 1.25rem;
+  gap: 2rem;
+}
+
+.sponsor-logo {
+  width: 144px;
+  height: 96px;
 }
 
 .sponsor-row img {
-  height: 1rem;
+  height: 100%;
+  width: 100%;
 }
 
 /* feature classes  */
@@ -572,6 +578,11 @@
 
   .app-button-group {
     flex-direction: column;
+  }
+
+  .sponsor-logo {
+    width: 96px;
+    height: 64px;
   }
 
   .testimonial-btn {
