@@ -1,3 +1,10 @@
+// toggle menu bar
+function toggleMenu() {
+  const menu = document.getElementById("menuList");
+  menu.classList.toggle("show");
+}
+
+// toglle faq
 const questions = document.querySelectorAll(".faq-question");
 
 questions.forEach((question) => {
